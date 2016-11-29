@@ -72,5 +72,13 @@ void division()
 
     printf("\nDivision of two numbers with same number of fractional bits\n");
     printf("%d / %d = %f\n", x, y, (float)h/(1<<Q));
+
+    x_pom = x << Q;
+    y_pom = y;
+
+    h = x_pom / y_pom;
+
+    printf("\nDivision of two numbers where one number has 0 fractional bits\n");
+    printf("%d / %d = %f\n", x, y, (float)h/(1<<Q));
 }
 
